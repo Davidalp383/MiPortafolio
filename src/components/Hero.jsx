@@ -13,7 +13,7 @@ export default function Hero() {
         data-aos-duration="1000"
       >
         <img
-          src="/src/assets/fondoPantalla.jpg"
+          src="/public/fondoPantalla.jpg"
           alt="Fondo Hero"
           className="w-full h-full object-cover object-center opacity-20 dark:opacity-10"
         />

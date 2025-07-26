@@ -10,7 +10,7 @@ export default function Experiencia() {
         data-aos-duration="1200"
       >
         <img
-          src="/src/assets/fondoPantalla.jpg"
+          src="/public/fondoPantalla.jpg"
           alt="Fondo Experiencia"
           className="w-full h-full object-cover object-center opacity-20 dark:opacity-10"
         />
