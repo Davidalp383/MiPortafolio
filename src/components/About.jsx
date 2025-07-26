@@ -13,7 +13,7 @@ export default function About() {
         data-aos-duration="1000"
       >
         <img
-          src="/public/fondoPantalla.jpg"
+          src="/fondoPantalla.jpg"
           alt="Fondo About"
           className="w-full h-full object-cover object-center opacity-20 dark:opacity-10"
         />
@@ -34,7 +34,7 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 -z-10"></div>
 
           <img
-            src="/public/miFoto.jpg"
+            src="/miFoto.jpg"
             alt="David López"
             className="w-full h-full object-cover"
           />

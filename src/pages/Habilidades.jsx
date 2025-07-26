@@ -10,7 +10,7 @@ export default function Habilidades() {
         data-aos-duration="1200"
       >
         <img
-          src="/public/fondoPantalla.jpg"
+          src="/fondoPantalla.jpg"
           alt="Fondo Habilidades"
           className="w-full h-full object-cover object-center opacity-20 dark:opacity-10"
         />
