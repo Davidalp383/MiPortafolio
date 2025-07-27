@@ -21,25 +21,25 @@ export default function Navbar() {
         <div className="flex space-x-4">
           <Link
             to={currentPath === '/experience' ? '/' : '/experience'}
-            className="flex items-center gap-2 bg-gray-700 text-white dark:text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition min-w-[8rem] justify-center"
+            className="flex items-center gap-2 bg-gray-700 text-white dark:text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition min-w-[8rem] justify-center drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
           >
-            <FaBriefcase className="w-4 h-4" />
+            <FaBriefcase className="w-4 h-4 animate-pulse" />
             {currentPath === '/experience' ? 'Home' : 'Experiencia'}
           </Link>
 
           <Link
             to={currentPath === '/habilidades' ? '/' : '/habilidades'}
-            className="flex items-center gap-2 bg-gray-700 text-white dark:text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition min-w-[8rem] justify-center"
+            className="flex items-center gap-2 bg-gray-700 text-white dark:text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition min-w-[8rem] justify-center drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
           >
-            <FaTools className="w-4 h-4" />
+            <FaTools className="w-4 h-4 animate-pulse" />
             {currentPath === '/habilidades' ? 'Home' : 'Habilidades'}
           </Link>
 
           <Link
             to={currentPath === '/contact' ? '/' : '/contact'}
-            className="flex items-center gap-2 bg-gray-700 text-white dark:text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition min-w-[7rem] justify-center"
+            className="flex items-center gap-2 bg-gray-700 text-white dark:text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition min-w-[7rem] justify-center drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
           >
-            <FaEnvelope className="w-4 h-4" />
+            <FaEnvelope className="w-4 h-4 animate-pulse" />
             {currentPath === '/contact' ? 'Home' : 'Contacto'}
           </Link>
         </div>
@@ -51,10 +51,10 @@ export default function Navbar() {
         >
           <button
             onClick={toggleTheme}
-            className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-800 transition"
+            className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-800 transition drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
             aria-label="Cambiar Tema"
           >
-            <FiSun className="text-white dark:text-gray-300 w-6 h-6" />
+            <FiSun className="text-white dark:text-gray-300 w-6 h-6 animate-spin-slow" />
           </button>
 
           {showTooltip && (
@@ -68,30 +68,29 @@ export default function Navbar() {
       {/* Bottom Navbar - SOLO MOBILE */}
       <nav className="flex md:hidden fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-gray-200 shadow-inner justify-between items-center px-4 py-2 rounded-t-xl z-50 border-4 border-gray-700 dark:border-gray-300">
         <BrainButton />
-        
 
         <div className="flex justify-around flex-1 mx-4">
           <Link
             to={currentPath === '/experience' ? '/' : '/experience'}
-            className="flex flex-col items-center text-gray-700 hover:text-gray-900 text-xs dark:text-gray-950"
+            className="flex flex-col items-center text-gray-700 hover:text-gray-900 text-xs dark:text-gray-950 drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
           >
-            <FaBriefcase className="w-5 h-5 mb-0.5" />
+            <FaBriefcase className="w-5 h-5 mb-0.5 animate-pulse" />
             {currentPath === '/experience' ? 'Home' : 'Experiencia'}
           </Link>
 
           <Link
             to={currentPath === '/habilidades' ? '/' : '/habilidades'}
-            className="flex flex-col items-center text-gray-700 hover:text-gray-900 text-xs dark:text-gray-950"
+            className="flex flex-col items-center text-gray-700 hover:text-gray-900 text-xs dark:text-gray-950 drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
           >
-            <FaTools className="w-5 h-5 mb-0.5" />
+            <FaTools className="w-5 h-5 mb-0.5 animate-pulse" />
             {currentPath === '/habilidades' ? 'Home' : 'Habilidades'}
           </Link>
 
           <Link
             to={currentPath === '/contact' ? '/' : '/contact'}
-            className="flex flex-col items-center text-gray-700 hover:text-gray-900 text-xs dark:text-gray-950"
+            className="flex flex-col items-center text-gray-700 hover:text-gray-900 text-xs dark:text-gray-950 drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
           >
-            <FaEnvelope className="w-5 h-5 mb-0.5" />
+            <FaEnvelope className="w-5 h-5 mb-0.5 animate-pulse" />
             {currentPath === '/contact' ? 'Home' : 'Contacto'}
           </Link>
         </div>
@@ -103,10 +102,10 @@ export default function Navbar() {
         >
           <button
             onClick={toggleTheme}
-            className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition"
+            className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]"
             aria-label="Cambiar Tema"
           >
-            <FiSun className="text-white dark:text-gray-300 w-6 h-6" />
+            <FiSun className="text-white dark:text-gray-300 w-6 h-6 animate-spin-slow" />
           </button>
 
           {showTooltip && (
