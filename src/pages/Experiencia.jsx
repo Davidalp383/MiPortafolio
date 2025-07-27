@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { FiCode, FiDatabase, FiFolder } from 'react-icons/fi';
+import { useState, useEffect } from 'react';
+import { FiCode, FiDatabase, FiFolder, FiArrowUp } from 'react-icons/fi';
 
 const projects = [
   {
@@ -22,6 +22,14 @@ const projects = [
 export default function Experiencia() {
   const [activeTab, setActiveTab] = useState('trayectoria');
   const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+        setShowScrollTop(window.scrollY > 200);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
 
   return (

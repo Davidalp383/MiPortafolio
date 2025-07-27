@@ -1,8 +1,20 @@
 import { motion } from 'framer-motion';
 import { FaHandPeace, FaLaptopCode, FaArrowDown } from 'react-icons/fa';
-
+import { useState, useEffect } from 'react';
+import { FiArrowUp } from 'react-icons/fi';
 
 export default function Hero() {
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+        setShowScrollTop(window.scrollY > 200);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
   return (
     <section
       id="home"
@@ -85,6 +97,17 @@ export default function Hero() {
         </motion.a>
 
       </div>
+
+      {showScrollTop && (
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-24 right-5 p-4 rounded-full bg-indigo-600 dark:bg-indigo-400 text-white shadow-lg hover:bg-indigo-700 dark:hover:bg-indigo-500 z-[999] transition animate-bounce"
+        aria-label="Volver arriba"
+      >
+        <FiArrowUp className="w-5 h-5" />
+      </button>
+    )}
+
     </section>
   );
 }
