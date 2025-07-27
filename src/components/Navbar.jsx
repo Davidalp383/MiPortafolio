@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { Link, useLocation } from 'react-router-dom';
 import { FiSun } from 'react-icons/fi';
+import BrainButton from './BrainButton';
 import { FaBrain, FaBriefcase, FaTools, FaEnvelope } from 'react-icons/fa';
 
 export default function Navbar() {
@@ -15,9 +16,7 @@ export default function Navbar() {
     <>
       {/* Navbar flotante arriba - SOLO DESKTOP/TABLET */}
       <nav className="hidden md:flex fixed top-5 left-1/2 transform -translate-x-1/2 bg-gray-200 rounded-2xl shadow-lg px-6 py-2 items-center space-x-4 z-50 border-4 border-gray-700 dark:border-gray-300">
-        <div className="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center">
-          <FaBrain className="text-white w-4 h-4" />
-        </div>
+        <BrainButton />
 
         <div className="flex space-x-4">
           <Link
@@ -68,9 +67,8 @@ export default function Navbar() {
 
       {/* Bottom Navbar - SOLO MOBILE */}
       <nav className="flex md:hidden fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-gray-200 shadow-inner justify-between items-center px-4 py-2 rounded-t-xl z-50 border-4 border-gray-700 dark:border-gray-300">
-        <div className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center">
-          <FaBrain className="text-white w-5 h-5" />
-        </div>
+        <BrainButton />
+        
 
         <div className="flex justify-around flex-1 mx-4">
           <Link

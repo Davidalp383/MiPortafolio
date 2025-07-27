@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Experiencia from './pages/Experiencia';
 import Habilidades from './pages/Habilidades';
 import Contacto from './pages/Contacto';
+import Cv from './pages/Cv';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path="/cv" element={<Cv />} />
           <Route path="/" element={<Home />} />     
           <Route path="/experience" element={<Experiencia />} />
           <Route path="/habilidades" element={<Habilidades />} />
