@@ -31,10 +31,11 @@ export default function About() {
           data-aos="zoom-in"
           data-aos-delay="400"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 -z-10"></div>
+          {/* Fondo degradado con brillo */}
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 blur-2xl opacity-30 animate-pulse -z-10"></div>
 
           <img
-            src="/miFoto.jpg"
+            src="/public/miFoto.jpg"
             alt="David López"
             className="w-full h-full object-cover"
           />
@@ -50,7 +51,7 @@ export default function About() {
             data-aos-delay="600"
           >
             <h3 className="flex items-center gap-2 text-2xl font-bold text-white dark:text-gray-900 mb-2">
-              <FaUser className="w-4 h-4 text-indigo-500 dark:text-indigo-600 animate-pulse" />
+              <FaUser className="w-4 h-4 text-indigo-500 dark:text-indigo-600 animate-pulse drop-shadow-[0_0_6px_rgba(99,102,241,0.6)]" />
               Sobre Mí
             </h3>
             <div className="w-12 h-1 bg-indigo-500 dark:bg-indigo-600 rounded-full mb-2"></div>
@@ -65,7 +66,7 @@ export default function About() {
             data-aos-delay="800"
           >
             <h3 className="flex items-center gap-2 text-2xl font-bold text-white dark:text-gray-900 mb-2">
-              <FaBriefcase className="w-4 h-4 text-indigo-500 dark:text-indigo-600" />
+              <FaBriefcase className="w-4 h-4 text-indigo-500 dark:text-indigo-600 drop-shadow-[0_0_6px_rgba(99,102,241,0.6)]" />
               Experiencia
             </h3>
             <div className="w-12 h-1 bg-indigo-500 dark:bg-indigo-600 rounded-full mb-2"></div>
@@ -79,7 +80,7 @@ export default function About() {
             data-aos-delay="1000"
           >
             <h3 className="flex items-center gap-2 text-2xl font-bold text-white dark:text-gray-900 mb-2">
-              <FaBullseye className="w-4 h-4 text-indigo-500 dark:text-indigo-600" />
+              <FaBullseye className="w-4 h-4 text-indigo-500 dark:text-indigo-600 drop-shadow-[0_0_6px_rgba(99,102,241,0.6)]" />
               Enfoque
             </h3>
             <div className="w-12 h-1 bg-indigo-500 dark:bg-indigo-600 rounded-full mb-2"></div>

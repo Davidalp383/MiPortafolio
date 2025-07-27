@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion';
 import { FaHandPeace, FaLaptopCode, FaArrowDown } from 'react-icons/fa';
+
 
 export default function Hero() {
   return (
@@ -66,15 +68,23 @@ export default function Hero() {
           Transformo ideas en experiencias visuales que impactan y comunican.
         </p>
 
-        <a
-          href="#about"
-          className="inline-flex items-center gap-2 px-8 py-3 bg-gray-700 text-white dark:bg-gray-300 dark:text-gray-900 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-400 transition"
-          data-aos="fade-up"
+        <motion.div
+          whileHover={{
+            scale: 1.05,
+            filter: 'drop-shadow(0 0 8px rgba(79, 70, 229, 0.6))',
+          }}
+          data-aos="fade-up"  // pon AOS en el contenedor, no en <a>
           data-aos-delay="800"
         >
-          Mira mi trabajo
-          <FaArrowDown className="w-4 h-4 animate-bounce" />
-        </a>
+          <a
+            href="#about"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-gray-700 text-white dark:bg-gray-300 dark:text-gray-900 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-400 transition"
+          >
+            Mira mi trabajo
+            <FaArrowDown className="w-4 h-4 animate-bounce" />
+          </a>
+        </motion.div>
+
       </div>
     </section>
   );

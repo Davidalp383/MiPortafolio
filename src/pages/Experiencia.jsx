@@ -18,7 +18,7 @@ export default function Experiencia() {
 
       <div className="max-w-4xl mx-auto relative z-10">
         <h1
-          className="text-5xl font-extrabold mb-4 tracking-wider text-gray-900 dark:text-gray-200"
+          className="text-5xl font-extrabold mb-4 tracking-wider text-gray-900 dark:text-gray-200 drop-shadow-[0_0_8px_rgba(99,102,241,0.5)]"
           data-aos="fade-up"
         >
           Mi{' '}
@@ -27,7 +27,7 @@ export default function Experiencia() {
           </span>
         </h1>
         <div
-          className="w-20 h-1 bg-indigo-600 dark:bg-indigo-400 mb-8 rounded-full"
+          className="w-20 h-1 bg-indigo-600 dark:bg-indigo-400 mb-8 rounded-full animate-pulse"
           data-aos="fade-up"
           data-aos-delay="100"
         ></div>
@@ -49,10 +49,10 @@ export default function Experiencia() {
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            <div className="absolute -left-5 top-1 w-4 h-4 bg-gray-700 dark:bg-gray-300 rounded-full border-4 border-white dark:border-gray-900"></div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition border-4 dark:border-gray-300 border-gray-700">
-              <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2">
-                <FiCode className="w-6 h-6 text-indigo-500" />
+            <div className="absolute -left-5 top-1 w-4 h-4 bg-gray-700 dark:bg-gray-300 rounded-full border-4 border-white dark:border-gray-900 drop-shadow-[0_0_6px_rgba(31,41,55,0.5)]"></div>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition border-4 dark:border-gray-300 border-gray-700">
+              <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 drop-shadow-[0_0_6px_rgba(99,102,241,0.5)]">
+                <FiCode className="w-6 h-6 text-indigo-500 animate-pulse" />
                 Frontend Developer
               </h2>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
@@ -71,10 +71,10 @@ export default function Experiencia() {
             data-aos="fade-left"
             data-aos-delay="400"
           >
-            <div className="absolute -left-5 top-1 w-4 h-4 bg-gray-700 dark:bg-gray-300 rounded-full border-4 border-white dark:border-gray-900"></div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition border-4 dark:border-gray-300 border-gray-700">
-              <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2">
-                <FiDatabase className="w-6 h-6 text-green-500" />
+            <div className="absolute -left-5 top-1 w-4 h-4 bg-gray-700 dark:bg-gray-300 rounded-full border-4 border-white dark:border-gray-900 drop-shadow-[0_0_6px_rgba(31,41,55,0.5)]"></div>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition border-4 dark:border-gray-300 border-gray-700">
+              <h2 className="text-2xl font-semibold mb-1 flex items-center gap-2 drop-shadow-[0_0_6px_rgba(34,197,94,0.5)]">
+                <FiDatabase className="w-6 h-6 text-green-500 animate-pulse" />
                 Backend Developer
               </h2>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
