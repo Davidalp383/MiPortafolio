@@ -35,7 +35,7 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 blur-2xl opacity-30 animate-pulse -z-10"></div>
 
           <img
-            src="/public/miFoto.jpg"
+            src="/miFoto.jpg"
             alt="David López"
             className="w-full h-full object-cover"
           />
