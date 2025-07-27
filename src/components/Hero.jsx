@@ -68,22 +68,21 @@ export default function Hero() {
           Transformo ideas en experiencias visuales que impactan y comunican.
         </p>
 
-        <motion.div
+        <motion.a
+          href="#about"
+          style={{
+            filter: 'drop-shadow(0 0 8px rgba(79, 70, 229, 0.8))',
+          }}
           whileHover={{
             scale: 1.05,
-            filter: 'drop-shadow(0 0 8px rgba(79, 70, 229, 0.6))',
           }}
-          data-aos="fade-up"  // pon AOS en el contenedor, no en <a>
+          className="inline-flex items-center gap-2 px-8 py-3 bg-gray-700 text-white dark:bg-gray-300 dark:text-gray-900 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-400 transition"
+          data-aos="fade-up"
           data-aos-delay="800"
         >
-          <a
-            href="#about"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-gray-700 text-white dark:bg-gray-300 dark:text-gray-900 rounded-lg font-semibold hover:bg-gray-800 dark:hover:bg-gray-400 transition"
-          >
-            Mira mi trabajo
-            <FaArrowDown className="w-4 h-4 animate-bounce" />
-          </a>
-        </motion.div>
+          Mira mi trabajo
+          <FaArrowDown className="w-4 h-4 animate-bounce" />
+        </motion.a>
 
       </div>
     </section>
